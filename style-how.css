@@ -66,11 +66,20 @@
         text-align: justify;
         margin-left: auto;
     }
+
+    .how-a1 ul{
+        padding-right: 1em;
+    }
+    .how-a2 ul{
+        padding-right: 1em;
+    }
+
     .how-a3{
         display: flex;
         padding: inherit;
-        height: 50%;
-    }
+        width: 80%;
+        flex-direction: column;
+        }
 
     .step {
         border: red solid 5px;
