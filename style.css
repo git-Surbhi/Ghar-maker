@@ -50,7 +50,7 @@
 
 
 .nav-list li a{
-    text-decoration: none;
+    text-decoration: none;  
     color: rgb(38, 50, 159);
     
 }
@@ -325,3 +325,4 @@ input::-webkit-inner-spin-button {
        
      }
     }  
+
