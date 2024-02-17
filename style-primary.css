@@ -62,12 +62,12 @@ footer {
         
     #nav-2 {
         display: flex;
-    background-color: rgba(177, 216, 253, 0.963);
-    justify-content: space-around;
-    z-index: 10;
-    padding: 20px;
-    flex-direction: column;
-    }
+        background-color: rgba(177, 216, 253, 0.963);
+        justify-content: space-around;
+        z-index: 10;
+        padding: 20px;
+        flex-direction: column;
+        }
 
         #nav-list-2{
                 display: flex;
@@ -107,8 +107,8 @@ footer {
             width: 51%;
         }
 
-        .navbar img{
-            width:40%;
+        .navbar .logo img{
+            width:20%;
             margin-left:10%;
          }
        
@@ -165,8 +165,8 @@ footer {
             width: 50%;
              
          }
-         .navbar img{
-            width:40%;
+         .navbar .logo img{
+            width:30%;
             margin-left:10%;
          }
     

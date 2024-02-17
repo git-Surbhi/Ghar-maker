@@ -26,6 +26,13 @@
 
 }
 
+.how-a1 ul{
+    padding-right: 1em;
+}
+.how-a2 ul{
+    padding-right: 1em;
+}
+
 
 @media (max-width:600px){
     .about{
@@ -67,12 +74,7 @@
         margin-left: auto;
     }
 
-    .how-a1 ul{
-        padding-right: 1em;
-    }
-    .how-a2 ul{
-        padding-right: 1em;
-    }
+    
 
     .how-a3{
         display: flex;
