@@ -1,0 +1,148 @@
+
+
+.about1{
+    width: 100%;
+    background-color: #b4d9fc;
+    padding: 30px;
+    text-align: center;
+    font: xx-large math;
+}
+
+.p1{
+    position: relative;
+    padding: 4%;
+    width: 72%;
+    z-index: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    font-family: math;
+}
+
+.pab{
+    margin-right: 3em;
+    background: #00c4c4;
+    font-family: math;
+    font-weight: bold;
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+.p2{
+    font-size: medium;
+    font-family: math;
+    position: fixed;
+    padding-top: 4%;
+    margin-left: 75%;
+}
+
+.p3{
+    display: flex;
+    flex-direction: column;
+}
+.DandD{
+    padding: 20px;
+    margin-right: 3em;
+    box-shadow: 2px 7px 10px grey;
+}
+
+.DandD summary::-webkit-details-marker {
+    display: none;
+    margin-right: 3em;
+   }
+
+.DandD summary {
+    list-style: none;
+    position: relative;
+    margin-right: 4em;
+    cursor: pointer;
+    padding: 10px;
+     
+     &::after {
+       content: '';
+       position: absolute;
+       box-shadow: 4px 4px #d1caca;
+       margin-right: 3em;
+       
+     }
+    }
+
+@media (max-width:600px){
+    .about{
+            padding-left: 20px;
+            padding-top: 25%;
+            display: block;
+    }
+
+    .p1 {
+        position: relative;
+        padding: 5%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .p2{
+        content-visibility: hidden;
+    }
+
+    .classic{
+        padding-top: 20%;
+    }
+    .standard{
+        padding-top: 20%;
+    }
+    .pab{
+        margin-right: 2em;
+        font-size: x-large;
+        padding: 2em;
+        background: #00c4c4;
+        
+    }
+    .DandD{
+        font-size: large;
+    }
+}
+
+@media (min-width:600px) and (max-width:1180px){
+    .about{
+        padding-left: 20px;
+        padding-top: 15%;
+        display: flex;
+    }
+
+    .p1 {
+        position: relative;
+        width: 60%;
+        flex-direction: column;
+    }
+    .pab{
+        margin-right: 2em;
+        font-size: x-large;
+        padding: 2em;
+        background: #00c4c4;
+        
+    }
+    .p2{
+        content-visibility: visible;
+        margin-left: 57%;
+    }
+
+    .classic{
+        padding-top: 20%;
+    }
+    .standard{
+        padding-top: 20%;
+    }      
+    }
+
+@media (min-width:1180px){
+    .about{
+        padding-left: 5px;
+        padding-top: 7%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+
