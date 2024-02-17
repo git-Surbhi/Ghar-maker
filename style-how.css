@@ -37,7 +37,7 @@
 @media (max-width:600px){
     .about{
         padding-left: 20px;
-        padding-top: 9%;
+        padding-top: 30%;
         display: flex;
         flex-direction: column;
     }
@@ -54,7 +54,7 @@
         font-size: large;
     }
     .how1{
-        padding-top: 30%;
+        padding-top: 40%;
         text-align: left;
     }
     .how-a1{
@@ -97,7 +97,7 @@
     .about{
         
         padding-left: 5px;
-        padding-top: 7%;
+        padding-top: 20%;
         display: flex;
         flex-direction: column;
 
@@ -117,7 +117,7 @@
         font-size: large;
     }
     .how1{
-        padding-top: 30%;
+        padding-top: 40%;
         text-align: left;
     }
     .how-a1{
