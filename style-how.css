@@ -1,0 +1,209 @@
+
+/* https://www.kodnest.com/exam/kodnest_csr_inderprastha_17feb24/1900/ */
+
+.bac2{
+    background: rgba(0,0,0,0.5) url(https://th.bing.com/th/id/OIP.jfOPXUvM2p2jiYy5NF6EbQHaE8?rs=1&pid=ImgDetMain);
+     background-size: cover;
+     background-blend-mode: darken;
+ }
+ 
+.about1{
+    background-color: #b4d9fc;
+    padding: 30px;
+    text-align: center;
+    font: xx-large math;
+}
+
+.how{
+    color: rgb(255, 255, 255);
+}
+
+#border{
+    border-top-left-radius: 22px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+
+@media (max-width:600px){
+    .about{
+        padding-left: 20px;
+        padding-top: 9%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .how{
+        padding: 25%;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .how h1{
+        font-size: xx-large;
+    }
+    .how h2{
+        font-size: large;
+    }
+    .how1{
+        padding-top: 30%;
+        text-align: left;
+    }
+    .how-a1{
+        padding: 5%;
+        font-size: large;
+        font-family: math;
+        position: relative;
+        text-align: justify;
+        
+    }
+    .how-a2{
+        padding: 5%;
+        font-size: large;
+        font-family: math;
+        position: relative;
+        text-align: justify;
+        margin-left: auto;
+    }
+    .how-a3{
+        display: flex;
+        padding: inherit;
+        height: 50%;
+    }
+
+    .step {
+        border: red solid 5px;
+        padding: 6px;
+        padding-left: 5%;
+        font-size: large;
+        font-weight: bold;
+        padding-right: 7%;
+    }
+}
+
+@media (min-width:600px) and (max-width:1180px){
+    .about{
+        
+        padding-left: 5px;
+        padding-top: 7%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .how{
+        padding: 18%;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .how h1{
+       
+        font-size: xx-large;
+    }
+    .how h2{
+        
+        font-size: large;
+    }
+    .how1{
+        padding-top: 30%;
+        text-align: left;
+    }
+    .how-a1{
+        padding: 5%;
+        font-size: large;
+        font-family: math;
+        position: relative;
+        text-align: justify;
+        
+    }
+    .how-a2{
+        padding: 5%;
+        font-size: large;
+        font-family: math;
+        position: relative;
+        text-align: justify;
+        
+    }
+    .how-a3{
+    display: flex;
+    padding: inherit;
+    width: 65%;
+    flex-direction: column;
+    }
+
+    .step{
+        border: red solid 5px;
+        padding: 6px;
+        padding-left: 5%;
+        font-size: large;
+        font-weight: bold;
+        padding-right: 29%;
+        
+    }
+      
+    }
+
+@media (min-width:1180px){
+    .about{
+        padding-left: 5px;
+        padding-top: 7%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .how{
+        padding: 15%;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .how1{
+        padding-top: 20%;
+        text-align: left;
+    }
+    
+    
+    .how h1{
+        font-size: xxx-large;
+    }
+    .how h2{
+        font-size: x-large;
+    }
+    
+    .how-a1{
+        padding: 5%;
+        font-size: large;
+        font-family: math;
+        position: relative;
+        text-align: justify;
+        width: 50%;
+        border-right: red dotted 5px ;
+        margin-left: auto;
+    }
+    .how-a2{
+        padding: 5%;
+        font-size: large;
+        font-family: math;
+        position: relative;
+        text-align: justify;
+        width: 50%;
+        margin-left: auto;
+    }
+    .how-a3{
+        display: flex;
+        padding: inherit;
+        height: 50%;
+    }
+    .step{
+        border: red solid 5px;
+        padding: 6px;
+        padding-left: 5%;
+        font-size: larger;
+        font-weight: bold;
+        padding-right: 29%;
+        
+    }
+       
+}
+
+
