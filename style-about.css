@@ -1,0 +1,86 @@
+
+.bac2{
+    background: rgba(0,0,0,0.5) url(https://th.bing.com/th/id/OIP.jfOPXUvM2p2jiYy5NF6EbQHaE8?rs=1&pid=ImgDetMain);
+     background-size: cover;
+     background-blend-mode: darken;
+ }
+ 
+.about1{
+    background-color: #b4d9fc;
+    padding: 30px;
+    text-align: center;
+    font: xx-large math;
+}
+
+@media (max-width:600px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20%;
+        align-items: center;
+    }
+    .a2 {
+        padding: 6%;
+        font-size: medium;
+        font-family: math;
+        text-align: justify;
+        /* width: 50%; */
+        margin-left: auto;
+    }  
+}
+
+@media (min-width:600px) and (max-width:940px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding-top: 15%;
+        align-items: center;
+    }
+    
+    .a1{
+        display: contents;
+
+    }
+    .a1 img{
+        width:100%;
+    }
+    .a2 {
+        padding: 6%;
+        font-size: medium;
+        font-family: math;
+        text-align: justify;
+        
+    }  
+    }
+
+@media (min-width:940px){
+
+    .about{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9%;
+} 
+
+    .a1{
+        position: relative;
+        padding: 3%;
+        z-index: 0;
+        box-shadow: #4a4a4a;
+    }
+    .a2{
+        padding: 5%;
+        font-size: medium;
+        font-family: math;
+        position: relative;
+        text-align: justify;
+        width: 50%;
+        margin-left: auto;
+    }
+    .ab{
+        position: fixed;
+    }
+       
+}
+
+
