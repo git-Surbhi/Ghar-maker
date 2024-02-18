@@ -59,6 +59,16 @@
     cursor: pointer;
 }
 
+.cost{
+    color: white;
+    padding: 2em;
+    background-color: rgb(156 60 60);
+}
+
+#cost-ce{
+    display: none;
+}
+
 @media (max-width:600px){
     .ce{
         text-align: left;
@@ -97,6 +107,10 @@
         margin: 13%;
         background-color: #3c509c;
         color: white;
+    }
+    .cost{
+        font-size: large;
+        margin-right: 35%;
     }
 }
 
@@ -141,7 +155,19 @@
         background-color: #3c509c;
         color: white;
     }
+    .cost{
+        font-size: x-large;
+        margin: 5%;
+    }
 
+    }
+
+    @media (min-width:1180px) and (max-width:1300px) {
+        .cost{
+            margin-right: 40%;
+            margin-top: 5%;
+            font-size: x-large;
+        }
     }
 
     @media (min-width:1300px) {
@@ -167,6 +193,12 @@
             background-color: #3c509c;
             color: white;
         }
+        .cost{
+            margin-right: 40%;
+            margin-top: 5%;
+            font-size: x-large;
+        }
+        
     }
 
 

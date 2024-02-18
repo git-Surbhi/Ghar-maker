@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-cost.css">
-    <link rel="stylesheet" href="style-primary.css">
+    <link rel="stylesheet" href="style/style-cost.css">
+    <link rel="stylesheet" href="style/style-primary.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+   
     <title>Ghar-Maker</title>
 </head>
 <body>
@@ -57,7 +57,7 @@
                     </ul>
               </div>
           </div>  
-          </nav>
+        </nav>
         <div class="ce bac3">
                 <h1>House Construction Cost Estimator </h1>
                 <br>
@@ -68,31 +68,144 @@
                 </div>
 
         
-        
-
-        <form class="cce">
+        <form class="cce" name="form1" method="get" action="" id="form-ce">
             <label for="pincode">Pincode of Plot/Site*</label>
             <input type="number" id = "pincode" name="pincode" size="6">
 
             <label for="width">Width of Plot* </label>
-            <input type="number" id = "width" name="width" required>
+            <input type="number" name="width" required>
+            <!-- <input type="number" id = "width" name="width" required> -->
 
             <label for="Length">Length of Plot*</label>
-            <input type="number" id = "length" name="length" required>
+            <input type="number" name="length" required>
+            <!-- <input type="number" id = "length" name="length" required> -->
             
             <label for="Floors">No. of Floors*</label>
-            <input type="number" id = "Floors" name="Floors" required>
+            <input type="number" name="Floors" required>
+            <!-- <input type="number" id = "Floors" name="Floors" required> -->
 
             <label for="super_area">Super Built up Area (sq.ft.)*</label>
-            <input type="number" id = "super_area" name="super_area" required>
+            <input type="number" name="super_area" required>
+            <!-- <input type="number" id = "super_area" name="super_area" required> -->
 
-            <button class="btn-ce" type="signin" id = "border">
+            <button class="btn-ce" type="button" id = "border" onclick= "solve()">
                 Cost Estimator</button>
+
+                <div class="cost" id="cost-ce">
+                    <p>To know more Go to Our Package section.</p>
+                    Classic price: <span id="result1">  </span><br>
+                    Standard price: <span id="result2">  </span><br>
+                    Budget price: <span id="result3">  </span>
+                </div> 
         </form>
-    </div>
+           
+         </div>
 
         <footer class="about1">
             
         </footer>
+
+        <script >
+                function solve(){
+                    
+
+                    if(isNaN(document.forms["form1"]["width"].value) || document.forms["form1"]["width"].value=="" ||isNaN(document.forms["form1"]["length"].value) || document.forms["form1"]["length"].value=="" ||isNaN(document.forms["form1"]["super_area"].value) || document.forms["form1"]["super_area"].value=="" ||isNaN(document.forms["form1"]["Floors"].value) || document.forms["form1"]["Floors"].value=="") {   
+                    
+                        var sA = 0;  
+                        var width = 0;  
+                        var length = 0;  
+                        var floors = 0;  
+                    }
+                else{
+                    document.getElementById("cost-ce").style.display = "block";
+                // var sA = document.form1.getElementById("super_area").value;
+                // var width = document.form1.getElementById("width").value;
+                // var length = document.form1.getElementById("length").value;
+                // var floors = document.form1.getElementById("Floors").value;
+            
+                
+               var width = parseFloat(document.forms["form1"]["width"].value);
+               var sA = parseFloat(document.forms["form1"]["super_area"].value);
+               var floors = parseInt(document.forms["form1"]["Floors"].value);
+               var length = parseFloat(document.forms["form1"]["length"].value);
+
+                // var y = ((document.getElementById("width") * document.getElementById("length")) + document.getElementById("super_area")) * document.getElementById("Floors");
+
+                var area = (width*length);
+                var total = area + sA;
+                var y = total * floors;
+                
+
+                var cp = y * 1900;
+                var sp = y * 1750;
+                var bp = y * 1600;   
+                
+        
+                console.log(cp);
+                console.log(sp);
+                console.log(bp);
+
+                // let a = cp.toString();
+                // let b = sp.toString();
+                // let c = bp.toString();
+
+                document.getElementById("result1").innerHTML = cp.toString();
+                document.getElementById("result2").innerHTML = sp.toString();
+                document.getElementById("result3").innerHTML = bp.toString();
+                
+                // var r1 = document.getElementById("result1");
+                // var r2 = document.getElementById("result2");
+                // var r3 = document.getElementById("result3");
+
+                
+                // document.forms["form1"]["result1"].value = cp;
+                // document.forms["form1"]["result2"].value = sp;
+                // document.forms["form1"]["result3"].value = bp;
+
+                
+          
+
+                // r1.innerHTML = a;
+                // r2.innerHTML = b;
+                // r3.innerHTML = c;
+                }
+                // r1.value = cp;
+                // r2.value = sp;
+                // r3.value = bp;
+
+                
+
+
+            // cp = document.form1.result1.value;  
+            //     if(cp)  
+            //     {  
+            //         document.form1.cost.value = eval(cp);  
+            //     }  
+
+            }
+
+            // document.getElementsById("result1").value = classic_price;
+            // document.getElementsById("result2").value = standard_price;
+            // document.getElementsById("result3").value = budget_price;
+    
+            // let result = 'Our price: \n Classic price: ${classic_price} \n Standard price: ${standard_price} \n Budget price: ${budget_price}';
+    
+            // console.log(result);
+            
+            // document.getElementsByClassName("cost").innerText = result;
+            
+            // document.writeIn("result1").innerHTML = "}";
+            // document.getElementById("result1").innerText = classic_price;
+            // document.getElementsById("result2").innerHTML = "Standard price: ";
+            // document.getElementById("result2").value = standard_price; 
+            // document.getElementsById("result3").innerHTML = "Budget price: ";
+            // document.getElementById("result3").value = budget_price; 
+            
+        
+    
+    </script>
     </body>
+
+
 </html>
+
