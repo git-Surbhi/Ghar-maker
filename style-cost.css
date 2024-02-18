@@ -79,7 +79,7 @@
     .cce{
         display: flex;
         justify-items: start;
-        font-size: x-large;
+        font-size: large;
         align-items: baseline;
         flex-direction: column;
     
@@ -122,7 +122,7 @@
     .cce{
         display: flex;
         justify-items: start;
-        font-size: x-large;
+        font-size: large;
         align-items: baseline;
         flex-direction: column;
     
