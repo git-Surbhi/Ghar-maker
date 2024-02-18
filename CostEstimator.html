@@ -118,10 +118,7 @@
                     }
                 else{
                     document.getElementById("cost-ce").style.display = "block";
-                // var sA = document.form1.getElementById("super_area").value;
-                // var width = document.form1.getElementById("width").value;
-                // var length = document.form1.getElementById("length").value;
-                // var floors = document.form1.getElementById("Floors").value;
+                
             
                 
                var width = parseFloat(document.forms["form1"]["width"].value);
@@ -129,7 +126,7 @@
                var floors = parseInt(document.forms["form1"]["Floors"].value);
                var length = parseFloat(document.forms["form1"]["length"].value);
 
-                // var y = ((document.getElementById("width") * document.getElementById("length")) + document.getElementById("super_area")) * document.getElementById("Floors");
+                
 
                 var area = (width*length);
                 var total = area + sA;
@@ -145,61 +142,17 @@
                 console.log(sp);
                 console.log(bp);
 
-                // let a = cp.toString();
-                // let b = sp.toString();
-                // let c = bp.toString();
+                
 
                 document.getElementById("result1").innerHTML = cp.toString();
                 document.getElementById("result2").innerHTML = sp.toString();
                 document.getElementById("result3").innerHTML = bp.toString();
                 
-                // var r1 = document.getElementById("result1");
-                // var r2 = document.getElementById("result2");
-                // var r3 = document.getElementById("result3");
-
                 
-                // document.forms["form1"]["result1"].value = cp;
-                // document.forms["form1"]["result2"].value = sp;
-                // document.forms["form1"]["result3"].value = bp;
-
-                
-          
-
-                // r1.innerHTML = a;
-                // r2.innerHTML = b;
-                // r3.innerHTML = c;
-                }
-                // r1.value = cp;
-                // r2.value = sp;
-                // r3.value = bp;
-
-                
-
-
-            // cp = document.form1.result1.value;  
-            //     if(cp)  
-            //     {  
-            //         document.form1.cost.value = eval(cp);  
-            //     }  
 
             }
 
-            // document.getElementsById("result1").value = classic_price;
-            // document.getElementsById("result2").value = standard_price;
-            // document.getElementsById("result3").value = budget_price;
-    
-            // let result = 'Our price: \n Classic price: ${classic_price} \n Standard price: ${standard_price} \n Budget price: ${budget_price}';
-    
-            // console.log(result);
-            
-            // document.getElementsByClassName("cost").innerText = result;
-            
-            // document.writeIn("result1").innerHTML = "}";
-            // document.getElementById("result1").innerText = classic_price;
-            // document.getElementsById("result2").innerHTML = "Standard price: ";
-            // document.getElementById("result2").value = standard_price; 
-            // document.getElementsById("result3").innerHTML = "Budget price: ";
-            // document.getElementById("result3").value = budget_price; 
+        }
             
         
     
