@@ -69,14 +69,14 @@
 
         
         <form class="cce" name="form1" method="get" action="" id="form-ce">
-            <label for="pincode">Pincode of Plot/Site*</label>
+            <label for="pincode">Pincode of Plot/Site</label>
             <input type="number" id = "pincode" name="pincode" size="6">
 
-            <label for="width">Width of Plot* </label>
+            <label for="width">Width of Plot (sq.ft.)* </label>
             <input type="number" name="width" required>
             <!-- <input type="number" id = "width" name="width" required> -->
 
-            <label for="Length">Length of Plot*</label>
+            <label for="Length">Length of Plot (sq.ft.)*</label>
             <input type="number" name="length" required>
             <!-- <input type="number" id = "length" name="length" required> -->
             
@@ -88,20 +88,20 @@
             <input type="number" name="super_area" required>
             <!-- <input type="number" id = "super_area" name="super_area" required> -->
 
-            <button class="btn-ce" type="button" id = "border" onclick= "solve()">
-                Cost Estimator</button>
+            <button class="btn-ce" type="button" id = "border" onclick= "solve()"><a href="#about1">Cost Estimator</a>
+                </button>
 
                 <div class="cost" id="cost-ce">
                     <p>To know more Go to Our Package section.</p>
-                    Classic price: <span id="result1">  </span><br>
-                    Standard price: <span id="result2">  </span><br>
-                    Budget price: <span id="result3">  </span>
+                    Classic price: Rs.<span id="result1"> </span>&nbsp; per sq.ft <br>
+                    Standard price: Rs. <span id="result2"> </span>&nbsp; per sq.ft <br>
+                    Budget price: Rs. <span id="result3">  </span>&nbsp; per sq.ft
                 </div> 
         </form>
            
          </div>
 
-        <footer class="about1">
+        <footer class="about1" id="about1">
             
         </footer>
 
@@ -117,6 +117,8 @@
                         var floors = 0;  
                     }
                 else{
+
+                    
                     document.getElementById("cost-ce").style.display = "block";
                 
             

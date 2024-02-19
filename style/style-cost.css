@@ -59,6 +59,11 @@
     cursor: pointer;
 }
 
+.btn-ce a {
+    text-decoration: none;
+    color: white;
+}
+
 .cost{
     color: white;
     padding: 2em;
