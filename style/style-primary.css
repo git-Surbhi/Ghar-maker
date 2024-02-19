@@ -112,6 +112,9 @@ footer {
             margin-left:10%;
          }
        
+         .about2{
+            font-size: medium;
+         }
     }
 
 @media (min-width:500px) and (max-width:1200px) {
@@ -178,6 +181,8 @@ footer {
         position: fixed;
         display: flex;
     }
+
+    
  
         #nav-1{
             display: flex;
