@@ -1,0 +1,43 @@
+.bac4{
+    background: rgba(255,255,255,0.6) url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkuHOng3uVJnYdmXbORQKuBS2kE45VJDVTMA&usqp=CAU");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+.about{
+    padding-left: 20px;
+    padding-top: 40%;
+    display: block;
+    width: 100%;
+}
+
+
+@media (max-width:600px){
+    .about{
+            padding-left: 20px;
+            padding-top: 40%;
+            display: block;
+    }
+
+    
+}
+
+@media (min-width:600px) and (max-width:1180px){
+    .about{
+        padding-left: 20px;
+        padding-top: 20%;
+        display: flex;
+    }
+}
+
+@media (min-width:1180px){
+    .about{
+        padding-left: 5px;
+        padding-top: 10%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+

@@ -207,22 +207,18 @@ a .btn-ce {
           }
           .btn-ce{
             font-size: x-large;
-            margin: 13%;
+            margin: auto;
             background-color: #3c509c;
             color: white;
-            margin-left: -90%;
+          
         }
         .cost{
             margin-right: 40%;
             margin-top: 5%;
             font-size: x-large;
         }
-        #sA{
-            margin-right: 2%;
-        }
-        #super_area{
-            margin-right: 33%;
-        }
+        
+        
         
     }
 

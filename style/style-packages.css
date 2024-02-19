@@ -1,13 +1,4 @@
 
-
-.about1{
-    width: 100%;
-    background-color: #b4d9fc;
-    padding: 30px;
-    text-align: center;
-    font: xx-large math;
-}
-
 .p1{
     position: relative;
     padding: 4%;
@@ -160,5 +151,6 @@
         z-index: 1;
     }    
 }
+
 
 

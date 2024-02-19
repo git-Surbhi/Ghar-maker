@@ -237,3 +237,13 @@ footer {
         }
    }
 
+   .about2{
+    width: 100%;
+    background-color: #b4d9fc;
+    padding: 30px;
+    text-align: center;
+    font: large math;
+    color:black;
+    
+}
+
