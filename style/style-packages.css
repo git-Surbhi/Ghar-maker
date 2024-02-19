@@ -41,9 +41,17 @@
     flex-direction: column;
 }
 .DandD{
+    /* text-decoration: underline; */
+    text-underline-position: under;
     padding: 20px;
     margin-right: 3em;
     box-shadow: 2px 7px 10px grey;
+}
+
+.DandD:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    z-index: 1;
 }
 
 .DandD summary::-webkit-details-marker {
